@@ -1,6 +1,6 @@
 <x-layouts.guest>
 
-    <form action="" class="flex flex-col gap-y-5 md:min-w-[400px] bg-slate-50 px-12 py-8">
+    <form method="POST" action="/login" class="flex flex-col gap-y-5 md:min-w-[400px] bg-slate-50 px-12 py-8">
         @csrf
         <h3>Login Here!</h3>
         <x-form.field name="username" lblname="Username" placeholder="Username" />
