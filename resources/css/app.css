@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+
+    h3 {
+        @apply text-2xl font-bold text-center
+    }
+
+}

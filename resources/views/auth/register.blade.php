@@ -1,7 +1,8 @@
 <x-layouts.guest>
     
-    <form action="" class="flex flex-col gap-y-5 md:min-w-[400px] bg-slate-50 px-12 py-8">
+    <form method="POST" action="/register" class="flex flex-col gap-y-5 md:min-w-[400px] bg-slate-50 px-12 py-8">
         @csrf
+        <h3>Create Account</h3>
         <x-form.field name="username" lblname="Username" placeholder="Username" />
         <x-form.field name="email" lblname="Email" placeholder="Email" type="email"/>
         <x-form.field name="password" lblname="Password" placeholder="Password" type="password"/>
